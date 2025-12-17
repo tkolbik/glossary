@@ -28,10 +28,11 @@ Run the Backend
 Run Frontend
  - navigate to frontend folder
  - Run commands:
-  - npm install
-  - npm start
+   - npm install
+   - npm start
 
 The first time you run the application set up the admin account at `http://<frontend_host>/login`
+
 
 
 
