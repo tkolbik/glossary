@@ -18,12 +18,12 @@ The backend requires the following environment variables set up in appsettings.j
 - `JwtAudience` - JWT audience URL (e.g., `https://localhost`)
 
 Run the Backend
-  navigate to backend/glossaryapi folder
-  Run commands in order:
-    dotnet build
-    dotnet ef migrations add Initial
-    dotnet ef database update
-    dotnet run
+  - navigate to backend/glossaryapi folder
+  - Run commands in order:
+    - dotnet build
+    - dotnet ef migrations add Initial
+    - dotnet ef database update
+    - dotnet run
 
 Run Frontend
  navigate to frontend folder
@@ -32,4 +32,5 @@ Run Frontend
   npmstart
 
 The first time you run the application set up the admin account at `http://<frontend_host>/login`
+
 
