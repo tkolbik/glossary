@@ -7,7 +7,7 @@ Backend
 Frontend
 - Node.js 16+ with npm
 
-The backend requires the following environment variables.
+The backend requires the following environment variables set up in appsettings.json
 
 - `MYSQLHOST` - MySQL server host
 - `MYSQL_DATABASE` - Database name
@@ -18,13 +18,18 @@ The backend requires the following environment variables.
 - `JwtAudience` - JWT audience URL (e.g., `https://localhost`)
 
 Run the Backend
-
-dotnet restore
-dotnet run
+  navigate to backend/glossaryapi folder
+  Run commands in order:
+    dotnet build
+    dotnet ef migrations add Initial
+    dotnet ef database update
+    dotnet run
 
 Run Frontend
-
-npm install
-npm start
+ navigate to frontend folder
+ Run commands:
+  npm install
+  npmstart
 
 The first time you run the application set up the admin account at `http://<frontend_host>/login`
+
